@@ -15,7 +15,9 @@ const config = {
   corsOrigins: process.env.NODE_ENV === 'production' 
     ? [
         process.env.FRONTEND_URL || 'https://www.survows.com',
-        'https://www.survows.com'
+        'https://www.survows.com',
+        'https://survows.com',  // ← ADICIONE ESTA LINHA
+        'https://survows.netlify.app'  // Opcional, para compatibilidade
       ]
     : ['http://localhost:3000', 'http://localhost:3001'],
   
