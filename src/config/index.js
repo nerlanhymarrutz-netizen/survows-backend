@@ -4,7 +4,7 @@ const config = {
   port: process.env.PORT || 5000,
   nodeEnv: process.env.NODE_ENV || 'development',
   
-  frontendUrl: process.env.FRONTEND_URL || 'https://survows.netlify.app',
+  frontendUrl: process.env.FRONTEND_URL || 'https://www.survows.com',
   backendUrl: process.env.BACKEND_URL || 'https://survows-backend.onrender.com',
   
   mongoUri: process.env.MONGODB_URI || 'mongodb://localhost:27017/survows',
@@ -14,10 +14,10 @@ const config = {
   
   corsOrigins: process.env.NODE_ENV === 'production' 
     ? [
-        process.env.FRONTEND_URL || 'https://survows.netlify.app',
-        'https://survows.netlify.app'
+        process.env.FRONTEND_URL || 'https://www.survows.com',
+        'https://www.survows.com'
       ]
-    : ['http://localhost:3000', 'http://localhost:3001', 'https://survows.netlify.app'],
+    : ['http://localhost:3000', 'http://localhost:3001'],
   
   maxFileSize: 10 * 1024 * 1024,
 };
